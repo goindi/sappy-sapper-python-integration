@@ -49,7 +49,7 @@
 	function runAPI() {
 		fetch("./api/test?sym="+ticker)
 			.then(d => d.text())
-			.then(d => (api_output = JSON.parse(d)));
+			.then(d => (api_output = d));
 	}
 </script>
 
@@ -59,6 +59,7 @@
 	Tab or Clk
 </button>
 
+<h2>{api_output}</h2>
 <h2><strong>{api_output.symbol} ($ {api_output.price})</strong></h2>
 <h2><strong>Range:</strong></h2>
 <h2>${api_output.low} - ${api_output.high}</h2>
