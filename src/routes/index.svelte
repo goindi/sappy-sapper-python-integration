@@ -60,7 +60,7 @@
 	Tab or Clk
 </button>
 
-<h2>{py_ret}</h2>
+<h2>{api_output}</h2>
 <h2><strong>{api_output.SYMBOL} ($ {api_output.PRICE})</strong></h2>
 <h2><strong>Range:</strong></h2>
 <h2>${api_output.low} - ${api_output.high}</h2>
