@@ -60,7 +60,7 @@
 </button>
 
 <h2><strong>{api_output.SYMBOL}</strong></h2>
-<h2><strong>{api_output.SYMBOL}symbol</strong></h2>
+<h2><strong>{api_output.symbol}symbol</strong></h2>
 
 <figure>
 	<img alt='Fat Tony' src='FatTony.png'>
