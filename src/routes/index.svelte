@@ -1,5 +1,5 @@
 <style>
-	h1, h2, h3 figure, p {
+	h1, h2, h3, figure, p {
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -13,7 +13,7 @@
 	h3 {
 		font-size: 1.8em;
 		text-transform: uppercase;
-		font-weight: 400;
+		font-weight: 700;
 		margin: 0 0 0.5em 0;
 		color: purple;
 	}
