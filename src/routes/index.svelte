@@ -64,7 +64,7 @@
 </button>
 
 <h1>{api_output.symbol} ($ {api_output.price})</h1>
-<h1><span style="color:purple;">One week range:</span></h1>
+<h1><span style="color:purple;font-size: 1.8em;">One week range (3:1 odds):</span></h1>
 <h2><span style="color:red;">${api_output.low}</span> - ${api_output.high}</h2>
 
 <figure>
