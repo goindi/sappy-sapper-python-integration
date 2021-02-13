@@ -1,5 +1,5 @@
 <style>
-	h1, h2, figure, p {
+	h1, h2, h3 figure, p {
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -9,6 +9,13 @@
 		font-weight: 400;
 		margin: 0 0 0.5em 0;
 		
+	}
+	h3 {
+		font-size: 1.8em;
+		text-transform: uppercase;
+		font-weight: 400;
+		margin: 0 0 0.5em 0;
+		color: purple;
 	}
 
 		
@@ -64,7 +71,7 @@
 </button>
 
 <h1>{api_output.symbol} ($ {api_output.price})</h1>
-<h1><span style="color:purple;font-size: 1.8em;">One week range (3:1 odds):</span></h1>
+<h3>One week range (3:1 odds):</h3>
 <h2><span style="color:red;">${api_output.low}</span> - ${api_output.high}</h2>
 
 <figure>
