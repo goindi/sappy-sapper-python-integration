@@ -50,8 +50,7 @@
 	function runAPI() {
 		fetch("./api/test?sym="+ticker)
 			.then(d => d.text())
-			.then(py_ret = d)
-			.then(d => (api_output = JSON.parse(d)));
+			.then(d => (api_output = d));
 	}
 </script>
 
