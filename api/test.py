@@ -16,7 +16,7 @@ class handler(BaseHTTPRequestHandler):
         curr_date = str(datetime.date(datetime.now()))
         if "sym" in dic:
             try:
-                message = str(int(Stock(dic["sym"]).price))
+                message = '{"symbol":"XXX"}'
             except:
                 message = "-1"
         else:
