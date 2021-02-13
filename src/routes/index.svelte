@@ -49,7 +49,7 @@
 	function runAPI() {
 		fetch("./api/test?sym="+ticker)
 			.then(d => d.text())
-			.then(d => (api_output = d));
+			.then(d => (api_output = JSON.parse(d)));
 	}
 </script>
 
