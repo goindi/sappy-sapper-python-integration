@@ -59,7 +59,9 @@
 	Tab or Clk
 </button>
 
-<h2><strong>{api_output}</strong></h2>
+<h2><strong>{api_output.symbol}</strong></h2>
+<h2><strong>balh</strong></h2>
+<h2><strong>{api_output.SYMBOL}</strong></h2>
 
 <figure>
 	<img alt='Fat Tony' src='FatTony.png'>
