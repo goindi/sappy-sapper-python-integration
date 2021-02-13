@@ -8,6 +8,7 @@
 		text-transform: uppercase;
 		font-weight: 400;
 		margin: 0 0 0.5em 0;
+		color: purple;
 	}
 	h2 {
 		font-size: 5.8em;
@@ -60,8 +61,8 @@
 	Tab or Clk
 </button>
 
-<h2><strong>{api_output.symbol} ($ {api_output.price})</strong></h2>
-<h2><strong>One week range:</strong></h2>
+<h1>{api_output.symbol} ($ {api_output.price})</h1>
+<h1>One week range:</h1>
 <h2>${api_output.low} - ${api_output.high}</h2>
 
 <figure>
