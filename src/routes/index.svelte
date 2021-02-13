@@ -10,9 +10,7 @@
 		margin: 0 0 0.5em 0;
 		
 	}
-	h1 {
-		color: purple;
-	}
+
 		
 	h2 {
 		font-size: 5.8em;
@@ -42,7 +40,7 @@
 
 <script>
 	let ticker = "SPY";
-	let api_output = {"symbol":"🛁","price":0,"low":-1, "high":-1};
+	let api_output = {"symbol":"🛁","price":"🛁","low":"🛁", "high":"🛁🛁🛁🛁"};
 	let py_ret = "None";
 	
 	async function handleKeydown(event) {
@@ -66,7 +64,7 @@
 </button>
 
 <h1>{api_output.symbol} ($ {api_output.price})</h1>
-<h1>One week range:</h1>
+<h1><span style="color:purple;">One week range:</span></h1>
 <h2><span style="color:red;">${api_output.low}</span> - ${api_output.high}</h2>
 
 <figure>
