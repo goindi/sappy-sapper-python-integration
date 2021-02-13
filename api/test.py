@@ -17,11 +17,20 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type','text/plain')
         self.end_headers()
         curr_date = str(datetime.date(datetime.now()))
+        
         if "sym" in dic:
-            try:
-                message = '{"symbol":"XXX"}'
-            except:
-                message = "-1"
+            if dic["sym"] == 'WTF':
+                message = "r/Wsb eTF?\nH🥚dl."
+            else:
+                try:
+                    my_stock = Stock(dic["sym"])
+                    my_tuple = get_atm_ivol(my_stock, 7)
+                    curr_price = my_stock.price
+                    low = curr_price - 1.96*my_tuple[1]
+                    high = curr_price + 1.96*my_tuple[1]
+                    message = f'{{"symbol":{my_stock.ticker},"price":{my_stock.price},"low":{low},"high":{high}}}'
+                except:
+                    message = "-1"
         else:
             message = "Hello, stranger!"
         self.wfile.write(message.encode())
