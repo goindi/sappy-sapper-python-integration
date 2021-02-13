@@ -37,7 +37,7 @@
 
 <script>
 	let ticker = "SPY";
-	let api_output = "🛁";
+	let api_output = {"symbol":"🛁","price":0,"low":-1, "high":-1};
 	
 	async function handleKeydown(event) {
 		if (event.key !== 'Tab') return;
@@ -59,8 +59,9 @@
 	Tab or Clk
 </button>
 
-<h2><strong>{api_output.SYMBOL}</strong></h2>
-<h2><strong>{api_output.symbol}symbol</strong></h2>
+<h2><strong>{api_output.symbol} ($ {api_output.price})</strong></h2>
+<h2><strong>Range:</strong></h2>
+<h2>${api_output.low} - ${api_output.high}</h2>
 
 <figure>
 	<img alt='Fat Tony' src='FatTony.png'>
