@@ -38,6 +38,7 @@
 <script>
 	let ticker = "SPY";
 	let api_output = {"symbol":"🛁","price":0,"low":-1, "high":-1};
+	let py_ret = "None";
 	
 	async function handleKeydown(event) {
 		if (event.key !== 'Tab') return;
@@ -49,6 +50,7 @@
 	function runAPI() {
 		fetch("./api/test?sym="+ticker)
 			.then(d => d.text())
+			.then(py_ret = d)
 			.then(d => (api_output = JSON.parse(d)));
 	}
 </script>
@@ -59,7 +61,7 @@
 	Tab or Clk
 </button>
 
-<h2>{api_output}</h2>
+<h2>{py_ret}</h2>
 <h2><strong>{api_output.SYMBOL} ($ {api_output.PRICE})</strong></h2>
 <h2><strong>Range:</strong></h2>
 <h2>${api_output.low} - ${api_output.high}</h2>
