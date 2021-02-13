@@ -8,8 +8,12 @@
 		text-transform: uppercase;
 		font-weight: 400;
 		margin: 0 0 0.5em 0;
+		
+	}
+	h1 {
 		color: purple;
 	}
+		
 	h2 {
 		font-size: 5.8em;
 		text-transform: uppercase;
@@ -63,7 +67,7 @@
 
 <h1>{api_output.symbol} ($ {api_output.price})</h1>
 <h1>One week range:</h1>
-<h2>${api_output.low} - ${api_output.high}</h2>
+<h2><span style="color:red;">${api_output.low}</span> - ${api_output.high}</h2>
 
 <figure>
 	<img alt='Fat Tony' src='FatTony.png'>
