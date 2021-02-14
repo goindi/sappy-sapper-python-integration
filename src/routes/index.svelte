@@ -71,7 +71,7 @@
 </button>
 
 {#if api_output.symbol == "no_symbol"}
-	<h1>Please enter a symbol to see the range of price the stock can take in a week</h1>
+	<p>Please enter a symbol to see the range of price the stock can take in a week</p>
 {:else if api_output.symbol == "invalid_symbol"}
 	<h1>Your symbol was invalid. Please try again</h1>
 {:else}
