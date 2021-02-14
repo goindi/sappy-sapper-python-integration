@@ -30,7 +30,7 @@ class handler(BaseHTTPRequestHandler):
                     high = curr_price + 1.15*my_tuple[1]*curr_price
                     message = f'{{"symbol":"{my_stock.ticker}","price":"{round(my_stock.price)}","low":"{round(low)}","high":"{round(high)}"}}'
                 except:
-                    message = "-1"
+                    message = '{{"symbol":"invalid_symbol"}}'
         else:
             message = "Hello, stranger!"
         self.wfile.write(message.encode())
