@@ -72,7 +72,7 @@
 
 {#if api_output.symbol == "no_symbol"}
 	<h1>Please enter a symbol to see the range of price the stock can take in a week</h1>
-{:else if api_output.symbol == "no_symbol"}
+{:else if api_output.symbol == "invalid_symbol"}
 	<h1>Your symbol was invalid. Please try again</h1>
 {:else}
 	<h1>{api_output.symbol} ($ {api_output.price})</h1>
